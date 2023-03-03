@@ -47,8 +47,9 @@ export const registerOpenai = (app) => {
       model: 'gpt-3.5-turbo',
       messages: getMessages(message.channel),
     });
-    const messageText = res.data.choices[0].message.content;
+    const replyText = res.data.choices[0].message.content;
+    addMessage(message.channel, 'assistant', replyText);
 
-    await say(messageText);
+    await say(replyText);
   })
 };
