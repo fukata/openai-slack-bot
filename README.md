@@ -17,6 +17,7 @@ $ gem install mrsk
 SLACK_SIGNING_SECRET=<slackの管理画面から取得した値>
 SLACK_BOT_TOKEN=<slackの管理画面から取得した値>
 OPENAI_API_KEY=<openaiの管理画面から取得した値>
+MRSK_REGISTRY_PASSWORD=<dockerレジストリのパスワード>
 ```
 
 ### config/deploy.yml の作成
